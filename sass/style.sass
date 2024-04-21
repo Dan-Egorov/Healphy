@@ -49,12 +49,6 @@ h2
     font-size: 20px
     margin-top: 1%
     margin-left: 24%
-.main-section__right-wrapper__autors
-    font-weight: bold
-    color: $text_color
-    font-size: 18px
-    margin-top: 90%
-    margin-left: 8%
 
 //second section
 .second_section
@@ -88,6 +82,7 @@ h2
     font-size: 24px
     color: $text_color
 
+//third section
 .third_section
     height: 100vh
     background-color: $main
@@ -208,9 +203,21 @@ h2
         font-weight: bold
         list-style-type: none
 
+footer
+    background-color: $main
+    height: 15vh
+
+.footer-section__autors-box
+    height: 100%
+
+.footer-section__autors
+    font-size: 20px
+    color: #FFFFFF
+    height: 100%
+    background-color: #1f1f1f
+
+
 @media (max-width: 1199px)
-    .main-section__right-wrapper__autors
-        margin-top: 70%
     .fourth_section__container-content-box__text-box
         color: $text_color
         font-size: 20px
@@ -219,40 +226,75 @@ h2
     .fourth_section__container-content-box__text
         margin-top: 2%
         width: 85%
+    .third-section__container-content__text
+        margin-top: 4vh
+        font-size: 20px
 
 @media (max-width: 991px)
-    .main-section__left-wrapper
-        width: 0%
-    .main-section__right-wrapper
-        width: 100%
+    .main-section__content-container
+        height: 100vh
         background-image: url("../img/Picture1.jpg")
         background-position: center
         background-size: cover
+    .main-section__nav-container
+        display: none
+    .main-section__left-wrapper
+        width: 0%
+    .main-section__right-wrapper__title-box
+        margin-top: 20%
     .main-section__right-wrapper__title1
         color: #FFFFFF
+        font-size: 38px
         margin-left: 2%
-        font-size: 46px
     .main-section__right-wrapper__title2
-        font-weight: bold
-        color: #FFFFFF
-        font-size: 18px
-        margin-top: 1%
-        margin-left: 3%
-    .main-section__right-wrapper__autors
-        font-weight: bold
-        color: #FFFFFF
+        color: #e4e4e4
         font-size: 16px
-        margin-top: 80%
-        margin-left: 8%
-    .second-section__container__main_text
-        font-size: 20px
+        margin-top: 2%
+        margin-left: 3%
+    
     .second_section__meeting-box
-        width: 48%
+        width: 56%
     .second_section__meeting-text
         font-size: 28px
     .second-section__container__main_text-box
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin-top: 3vh
+        height: 85vh
+    .second-section__container__main_text
+        width: 95%
+        font-size: 18px
+        color: $text_color
+    
+    .third_section__meeting-box
+        width: 56%
+    .third_section__meeting-text
+        font-size: 25px
+    .third-section__container-content__image-box
+        width: 0%
+    .third-section__container-content__text-box
+        display: flex
         flex-direction: column
         align-items: center
-    .second-section__container__main_text
         width: 90%
-        font-size: 18px
+    .third-section__container-content__text
+        width: 80%
+        margin-top: 4vh
+        font-size: 19px
+    
+    .fourth_section__meeting-box
+        width: 56%
+    .fourth_section__meeting-text
+        font-size: 24px
+    .fourth_section__container-content-box__img-box
+        width: 0%
+    .fourth_section__container-content-box__text-box
+        display: flex
+        width: 100%
+        color: $text_color
+        font-size: 19px
+        justify-content: center
+    .fourth_section__container-content-box__text
+        margin-top: 3%
+        width: 100%
